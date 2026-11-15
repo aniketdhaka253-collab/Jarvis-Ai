@@ -1,5 +1,4 @@
 name: Build JARVIS APK
-
 on:
   workflow_dispatch:
   push:
@@ -48,9 +47,7 @@ jobs:
       - name: Build APK
         run: |
           cd jarvis
-          gradle assembleDebug
-
-      - uses: actions/upload-artifact@v4
+          gradle asload-artifact@v4
         with:
-          name: JARVIS-APK
-          path: jarvis/app/build/outputs/apk/debug/app-debug.apk# AniketJarvis-Ai
+-APK
+          path: jarvis/app/build/outputs/apk/debug/app-debug.apk#
